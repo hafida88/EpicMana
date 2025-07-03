@@ -27,7 +27,11 @@
 .col_11 {width:91.666666%;}
 .col_12 {width: 100%;}
 
-.container{
+body {
+    background-color: #FDFDFD;
+}
+
+.container {
     margin: 0 auto;
     font-family: "Exo", sans-serif;
 }
