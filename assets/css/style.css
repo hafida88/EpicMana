@@ -1,4 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family: "Limelight", sans-serif;
+}
+
+body{
+    background: linear-gradient(rgb(2, 2, 63), orangered);
+}
+
+
+.container1{
+  display: flex;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  color: #BDB5D5;
+}
+.container{
+    margin: 0 auto;
+    font-family: "Limelight", sans-serif;
+}
 
 .col_1 {width: 8.333333%;}
 .col_2 {width: 16.666666%;}
@@ -12,30 +35,66 @@
 .col_10 {width: 83.333333%;}
 .col_11 {width:91.666666%;}
 .col_12 {width: 100%;}
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-    vertical-align: baseline;
-    font-family: "Limelight", sans-serif;
-}
-      
-body {
-    background: linear-gradient(rgb(2, 2, 63), orangered);;
-}
-
+ 
 .container {
     margin: 0 auto;
-    
-}
-
+ }
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}  
+} 
 
-h1, h2, p {
+nav ul {
+    display: flex;
+    justify-content: center; 
+    list-style: none; 
+    background-color:#1B1035;
+    box-shadow:3px 3px rgb(207, 113, 25),-1em 0 0.4em rgb(132, 148, 236);
+    padding-top: 50px;
+}
+nav ul li {
+	     margin: 0 4rem; 
+       padding: 20px;
+       justify-items:center;
+}
+
+nav ul li a {
+    text-align: start;
+    color:white; 
+    border: orangered;
+    text-decoration: none; 
+    font-size: 1rem;
+}
+.image1 img{
+    width: 90px;
+    display: flex;
+}
+
+.image2 img{
+  margin-top: 100px;
+  width:900px;
+  margin-left: 500px;
+  box-shadow: 12px 12px 2px 1px  #1B1035; 
+}
+.text{
+    padding-left: 580px;
+    position: relative;
+}
+.text-indent{
+    text-indent: 70px;
+}
+.text-indent1{
+    text-indent: 50;
+}
+.center{
+    text-align: center;
+}
+.top{
+    padding-top:50px ;
+}
+
+ h1, h2, p {
     color: #BDB5D5;
 }
 
@@ -114,7 +173,7 @@ h2 {
     .col_11 {width:100%;}
     .col_12 {width: 100%;}
 
-    .container {
+ .container {
         margin: 0 auto;   
     }
 
@@ -139,4 +198,43 @@ h2 {
         margin: 100px 0 50px 0;
     }
 
-}  
+nav{
+        flex-direction: column;
+    }
+
+.container1{
+        width: 90%;
+    }
+.container{
+    width: 90%;
+  }
+.image1 img{
+        width: 90%;
+    }
+.image2 img{
+    width: 90%;
+}
+.text{
+  width: 90%;
+  }
+
+  .container {
+    margin: 0 auto;   
+}
+
+p, h1 {
+    width: 100%;
+    margin: 0;
+}
+
+img, .img {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+h2 {
+    margin: 100px 0 50px 0;
+}
+
+}
