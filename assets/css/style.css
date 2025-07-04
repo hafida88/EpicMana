@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
 }
@@ -29,7 +30,7 @@
 
 .container{
     margin: 0 auto;
-    font-family: "Exo", sans-serif;
+    font-family: , sans-serif;
 }
 
 .row {
@@ -37,3 +38,22 @@
     flex-direction: row;
     flex-wrap: wrap;
 } 
+footer{
+background: linear-gradient(rgb(2, 2, 63), orangered);
+color: #FDFDFD;
+position: absolute; bottom: 0; left: 0; right: 0;
+	line-height: 30px;
+  position:fixed;
+  padding-left: 200px;
+  height:150px;
+}
+ footer{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+
+
