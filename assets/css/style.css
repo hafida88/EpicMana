@@ -1,39 +1,126 @@
 *{
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
                               
-
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
-
-*  {
-    /* Inclut le padding et la bordure dans la largeur et la hauteur de l'élément.
-      Cela simplifie le calcul des tailles et évite les débordements inattendus. */
-    box-sizing: border-box;
-    /* Aligne les éléments sur la ligne de base du texte environnant, pour un rendu plus cohérent. */
-    vertical-align: baseline;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.col-1 {width: 8.333333%;}
+.col-2 {width: 16.666666%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.333333%;}
+.col-5 {width: 41.666666%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.333333%;}
+.col-8 {width: 66.666666%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.333333%;}
+.col-11 {width:91.666666%;}
+.col-12 {width: 100%;}
+body{
+    background: linear-gradient(rgb(2, 2, 63), orangered);
 }
 
-/* création des colonnes en % avec 6 chiffres après la virgule*/
-.col_1 {width: 8.333333%;}
-.col_2 {width: 16.666666%;}
-.col_3 {width: 25%;}
-.col_4 {width: 33.333333%;}
-.col_5 {width: 41.666666%;}
-.col_6 {width: 50%;}
-.col_7 {width: 58.333333%;}
-.col_8 {width: 66.666666%;}
-.col_9 {width: 75%;}
-.col_10 {width: 83.333333%;}
-.col_11 {width:91.666666%;}
-.col_12 {width: 100%;}
 
 .container{
+    display: flex;
     margin: 0 auto;
-    font-family: "Exo", sans-serif;
+     font-family: "Roboto", sans-serif;
+     color: #BDB5D5;
 }
+
 
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 } 
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    list-style: none; 
+    background-color:#1B1035;
+    box-shadow:3px 3px rgb(207, 113, 25),-1em 0 0.4em rgb(132, 148, 236);
+    padding-top: 50px;
+
+    
+}
+
+nav ul li {
+	margin: 0 4rem; 
+    padding: 20px;
+  
+    justify-items:center;
+   
+}
+
+nav ul li a {
+    text-align: start;
+    color:white; 
+    border: orangered;
+    text-decoration: none; 
+    font-size: 1rem; 
+   border: orangered;
+    
+}
+.image1 img{
+    width: 90px;
+    display: flex;
+}
+.image2 img{
+   margin-top: 100px;
+    width:900px;
+    margin-left: 500px;
+    box-shadow: 12px 12px 2px 1px  #1B1035; 
+}
+.text{
+    padding-left: 580px;
+    position: relative;
+}
+.text-indent{
+    text-indent: 70px;
+}
+.text-indent1{
+    text-indent: 50;
+}
+.center{
+    text-align: center;
+}
+.top{
+    padding-top:50px ;
+}
+
+@media screen and (max-width: 768px){
+    .col-10 {width: 90%;}
+    .col-2 {width: 900%;}
+    .col-3 {width: 90%;}
+    .col-4 {width: 90%;}
+    .col-5 {width: 90%;}
+    .col-6 {width: 90%;}
+    .col-7 {width: 90%;}
+    .col-8 {width: 90%;}
+    .col-9 {width: 90%;}
+    .col-10 {width: 90%;}
+    .col-11 {width:90%;}
+    .col-12 {width: 90%;}
+    
+nav{
+        flex-direction: column;
+    }
+.row{
+        width: 100%;
+    }
+.container{
+        width: 100%;
+    }
+.image1 img{
+        width: 100%;
+    }
+.image2 img{
+    width: 100%;
+}
+.text{
+    width: 100%;
+}
+
+}
